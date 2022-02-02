@@ -3,22 +3,49 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+:root {
+    ---fontColorPrimary: red;
+    ---fontColorSecondary: #000;
+    ---backgroundPrimary: #141414;
+    color: var(---fontColorPrimary);
+
+}
+
 body {
     background-color: var(---backgroundPrimary);
+    font-family: "Helvetica Neue"; /*se pone entre comillas para detectar un espacio en su interior, si no lo tomaria como dos cosas distintas*/
+    color: var(---fontColorPrimary);
+
 }
 /* HEADER SECTION */
 
 .header {
-    position: relative; /*le afectan reglas de movimiento, se puede mover*/
+    position: relative;
     height: 100vh;
     width: 100%;
-    color: red;
 }
 
-.header > video {
+.header .header__video {
+    height: 100%;
+    width: 100%;
+}
+
+.header__video video { /*se pone video 2 veces el primero es el div y el segundo es que se ha entrado al elemento video*/
     height: 100%;
     width: 100%;
     object-fit: cover; /* se pone una imagen o video y se ajusta al ancho de pantalla si esta en un div, es todo el tamño del div*/
+}
+
+.header__video::after {       /* Es para hacer que el fondo se difumine con el video*/
+    content:"";
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:rgba(0, 0, 0, 0.7); /*difuminado, la transparencia es de 0.7*/
+
 }
 
 .header__info {
@@ -41,6 +68,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 10px;
+    font-size: 48px;
 }
 
 .header__infoText > h1 {
