@@ -110,3 +110,78 @@ body {
     opacity: 0.5;
 }
 /* END HEADER SECTION */
+
+/* MAIN SECTION*/
+
+.main {
+    position: relative;
+    margin-top: -15vh;
+    background: linear-gradient(to bottom, transparent 6vh, #141414 20vh);
+}
+
+.main__section > .movie__section > h1 {
+    margin-left: 50px;
+}
+
+.mainSection__carousel {
+    display: flex;
+    padding: 40px 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 24px;
+    /* Mozilla */
+    scrollbar-width: none;
+}
+
+/* Safari & Chrome */
+.mainSection__carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carouselCard {
+    margin-left: 8px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 150ms ease-in;
+}
+
+.carouselCard:first-child {
+    margin-left: 48px;
+}
+
+.carouselCard img {
+    width: 330px;
+    height: 445px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 4px;
+}
+
+.carouselCard:hover {
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.carouselCard > .carouselText {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    text-align: center;
+}
+
+.carouselCard:hover > .carouselText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+
+
+
+/* END MAIN SECTION */
