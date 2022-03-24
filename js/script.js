@@ -43,4 +43,4 @@ const printMovie = (typeMovie,movies) => {
     })
 }
 // llamar la función downloadMovies
-downloadMovies(["Iron Man", "Marvel", "Jurassic World", "Horror Stories", "Disney", "Cartoons", "Cowboys", "sex", "Animals","Comedy", "Anime", "Snoopy", "Impossible Mission", "Thriller"])
+downloadMovies(["Iron Man", "Marvel", "Jurassic World", "Horror Stories", "Disney", "Cartoons", "Cowboys", "sex", "Animals","Comedy", "Anime", "Snoopy", "Impossible Mission", "Thriller", "Game of thrones", "the lost boys"])
