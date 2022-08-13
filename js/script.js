@@ -10,7 +10,7 @@ const downloadMovies = (movies) => {
         )
     });
 }
-// tratamiento de la película
+// tratamiento de la película: Posters
 const analizeData = (movies) => {
     return movies.map((movie) => ({
         ...movie,
@@ -20,7 +20,7 @@ const analizeData = (movies) => {
             : movie.Poster,
     }));
 };
-// pintar película
+// pintar película: Carrusel
 const printMovie = (typeMovie,movies) => {
     let mainSection = document.getElementById("mainSection");
     mainSection.innerHTML += `
@@ -43,4 +43,4 @@ const printMovie = (typeMovie,movies) => {
     })
 }
 // llamar la función downloadMovies
-downloadMovies(["Iron Man", "Marvel", "Jurassic World", "Horror Stories", "Disney", "Cartoons", "Cowboys", "sex", "Animals","Comedy", "Anime", "Snoopy", "Impossible Mission", "Thriller", "Game of thrones", "the lost boys"])
+downloadMovies(["Iron Man", "Euphoria", "Jurassic World", "Marvel", "Disney", "Cartoons", "Cowboys", "sex", "Animals","Comedy", "Impossible Mission", "Thriller", "Game of thrones", "Batman", "twilight", "Top gun", "Caribbean Pirates"])
