@@ -44,3 +44,4 @@ const printMovie = (typeMovie,movies) => {
 }
 // llamar la función downloadMovies
 downloadMovies(["Iron Man", "Batman", "Jurassic World", "Impossible Mission",  "Metallica", "Alien", "Thor", "Cowboys", "Sex", "Animals", "National Geographic",  "Game of thrones", "Caribbean Pirates", "Lord of the Rings"])
+
